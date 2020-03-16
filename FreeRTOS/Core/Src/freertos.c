@@ -150,7 +150,7 @@ void Serial1(void *argument){
     param[4] = 0x00;
     transmit(0x01, 0x03, 5, param);
     osDelay(5);
-    for(int i=0; i<1000; i++){
+    for(int i=0; i<2000; i++){
       receive(0x01, 0x02, 0x24, 0x02, buffer);
     }
     osDelay(5000);
